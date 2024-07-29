@@ -1712,6 +1712,8 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
+			height: 200px; 
+			object-fit: cover; 
 			margin: 0 0 2em 0;
 		}
 
@@ -2181,6 +2183,10 @@ input, select, textarea {
 		position: relative;
 		padding: 8em 0;
 		margin: 4em 0 0 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 20vh; /* Full viewport height */
 	}
 
 		#banner header {
@@ -2906,3 +2912,26 @@ input, select, textarea {
 			}
 
 	}
+
+.typewriter h1 {
+    font-size: 2em; /* Adjust this size to match your design */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    width: 100ch; /* Adjust the width to fit your text */
+    animation: typing 3.5s steps(15, end), blink-caret 0.75s step-end infinite;
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.1em;
+    background-color: orange;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
