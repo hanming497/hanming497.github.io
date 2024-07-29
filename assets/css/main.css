@@ -2929,12 +2929,6 @@ input, select, textarea {
 }
 
 
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
-}
-
 .article {
     display: flex;
     flex-direction: column;
