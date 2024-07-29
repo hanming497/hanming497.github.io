@@ -2912,21 +2912,31 @@ input, select, textarea {
 
 	}
 
-.typewriter h1 {
-    font-size: 2em; /* Adjust this size to match your design */
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.15em solid orange;
-    width: 100ch; /* Adjust the width to fit your text */
-    animation: typing 3.5s steps(15, end), blink-caret 0.75s step-end infinite;
-}
-
-.cursor {
-    display: inline-block;
-    width: 0.1em;
-    background-color: orange;
-    animation: blink-caret 0.75s step-end infinite;
-}
+	.typewriter h1 {
+		font-size: 2em; /* Adjust this size to match your design */
+		white-space: nowrap;
+		overflow: hidden;
+		border-right: 0.15em solid orange;
+		display: inline-block;
+		animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+	}
+	
+	.cursor {
+		display: inline-block;
+		width: 0.1em;
+		background-color: orange;
+		animation: blink-caret 0.75s step-end infinite;
+	}
+	
+	@keyframes typing {
+		from { width: 0 }
+		to { width: 100% } /* Adjust to the length of your text */
+	}
+	
+	@keyframes blink-caret {
+		from, to { border-color: transparent }
+		50% { border-color: orange }
+	}
 
 
 .article {
